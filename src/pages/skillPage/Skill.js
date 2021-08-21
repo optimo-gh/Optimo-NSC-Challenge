@@ -9,9 +9,9 @@ function Skill() {
             <h1>Occupation Profile</h1>
             <h5>Choose the skills you have</h5>
             <div className="container">
-                {cards.map((card, index) => {
+                {cards.map((index) => {
                     return (
-                        <Card key={index} no={card.index}/>
+                        <Card key={index} no={index}/>
                         
                     );
                 })}

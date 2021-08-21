@@ -10,13 +10,13 @@ function SkillsFam() {
             <h1>Occupation Profile</h1>
             <h5>Choose a Skill Cluster Family</h5>
             <div className="container">
-                {cards.map((card, index) => {
+                {cards.map((index) => {
                     return (
                         <div>
                             <NavLink className="navlink" to="/skills/skill">
                                 <Card 
                                     key={index} 
-                                    no={card.index}
+                                    no={index}
                                     title="skills"
                                 />
                             </NavLink>
