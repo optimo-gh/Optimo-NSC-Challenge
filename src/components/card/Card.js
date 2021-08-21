@@ -1,10 +1,11 @@
 import './style.css';
 
-function Card() {
+function Card(props) {
     return (
-        <div className="card">
-            <h1>Cluster</h1>
+        <div>
+            {props.title ? (<p className="card">Cluster</p>) : (<p className="card">Skill</p>)}
         </div>
+        
     )
 }
 

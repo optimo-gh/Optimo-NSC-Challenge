@@ -1,4 +1,14 @@
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
-    border: 1px solid black;
-    
+    border: 1px solid #000000;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    cursor: pointer;
+    background-color: lightblue;
 }

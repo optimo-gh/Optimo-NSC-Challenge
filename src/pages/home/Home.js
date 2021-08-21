@@ -7,10 +7,10 @@ function Home() {
             <img className="logo" src={logo} alt="logo"/>
             <h1>Are you a fresh worker who want to decide your first job or you want a career transtion?</h1>
             <div className="buttons">
-                <NavLink to="/skill">
+                <NavLink to="/skills">
                     <button>Look for first job</button>
                 </NavLink>
-                <NavLink to="/skill">
+                <NavLink to="/skills">
                     <button>Career transition</button>
                 </NavLink>
             </div>
