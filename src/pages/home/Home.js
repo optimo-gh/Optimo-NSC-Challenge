@@ -10,10 +10,10 @@ function Home() {
         career transtion?
       </h1>
       <div className='buttons'>
-        <NavLink to='/skill'>
+        <NavLink to='/skills'>
           <button>Look for first job</button>
         </NavLink>
-        <NavLink to='/skill'>
+        <NavLink to='/skills'>
           <button>Career transition</button>
         </NavLink>
       </div>
