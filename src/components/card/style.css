@@ -1,14 +1,17 @@
 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    border: 1px solid #000000;
-    width: 5rem;
-    height: 5rem;
-    margin: 2rem;
-    cursor: pointer;
-    background-color: lightblue;
+  border: 1px solid #000000;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
+  cursor: pointer;
+  background-color: lightblue;
+}
+.card:hover {
+  background-color: rgb(241, 44, 103);
 }

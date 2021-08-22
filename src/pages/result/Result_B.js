@@ -5,12 +5,17 @@ import facebook from "../../images/facebook.png";
 import twitter from "../../images/twitter.png";
 import linkedin from "../../images/linkedin.png";
 import Card from "../../components/card/Card";
+import logo from "../../images/OptimoLogo.png";
+import { NavLink } from "react-router-dom";
 
 function Result_B() {
   const cards = [1, 2, 3, 4, 5];
 
   return (
     <div className='result'>
+      <NavLink to='/'>
+        <img src={logo} alt='logo' className='logo-top' />
+      </NavLink>
       <div className='title'>
         <h2>You have obtained 80% skills of being an Library Assisstant</h2>
         <img src={chart}></img>

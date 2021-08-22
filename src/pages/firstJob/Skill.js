@@ -1,5 +1,6 @@
 import Card from "../../components/card/Card";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 function Skill() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -13,7 +14,9 @@ function Skill() {
           return <Card key={index} no={index} />;
         })}
       </div>
-      <button className='button'>Submit</button>
+      <NavLink to='/result_a'>
+        <button className='button'>Submit</button>
+      </NavLink>
     </div>
   );
 }
