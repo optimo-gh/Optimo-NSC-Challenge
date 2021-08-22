@@ -1,47 +1,57 @@
 import React from "react";
+import "./style.css";
 import chart from "../../images/result_chart.jpg";
 import facebook from "../../images/facebook.png";
 import twitter from "../../images/twitter.png";
 import linkedin from "../../images/linkedin.png";
+import Card from "../../components/card/Card";
 
 function Result_A() {
+  const cards = [1, 2, 3, 4, 5];
+
   return (
-    <div>
-      <div>
-        <h2>
-          You have obtained {/*numbers of skills */}% skills of being an Library
-          Assisstant
-        </h2>
+    <div className='result'>
+      <div className='title'>
+        <h2>You have obtained 80% skills of being an Library Assisstant</h2>
         <img src={chart}></img>
-        <div>
-          <ul>
+        <div className='social-container'>
+          <ul className='social-media'>
             <li>
-              <img src={facebook} width='30' height='30' alt='facebook' />
+              <p>Share My Result</p>
             </li>
             <li>
-              <img src={twitter} width='30' height='30' alt='twitter' />
+              <a href='http://www.facebook.com'>
+                <img src={facebook} width='20' height='20' alt='facebook' />
+              </a>
             </li>
             <li>
-              <img src={linkedin} width='30' height='30' alt='linkedin' />
+              <a href='http://www.twitter.com'>
+                <img src={twitter} width='20' height='20' alt='twitter' />
+              </a>
+            </li>
+            <li>
+              <a href='http://www.linkedin.com'>
+                <img src={linkedin} width='20' height='20' alt='linkedin' />
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div>
+      <div className='recommend'>
         <h2>To fully achieve this, here are some skills you need:</h2>
-        <div>box1</div>
-        <div>box2</div>
-        <div>box3</div>
-        <div>box4</div>
-        <div>box5</div>
+        <div className='container'>
+          {cards.map((index) => {
+            return <Card key={index} no={index} />;
+          })}
+        </div>
       </div>
-      <div>
+      <div className='recommend'>
         <h2>You might also like these jobs:</h2>
-        <div>box1</div>
-        <div>box2</div>
-        <div>box3</div>
-        <div>box4</div>
-        <div>box5</div>
+        <div className='container'>
+          {cards.map((index) => {
+            return <Card key={index} no={index} title='Job' />;
+          })}
+        </div>
       </div>
     </div>
   );

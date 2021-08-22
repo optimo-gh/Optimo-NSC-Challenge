@@ -1,5 +1,4 @@
 import Card from "../../components/card/Card";
-import { NavLink } from "react-router-dom";
 import "./style.css";
 
 function Skill() {
@@ -10,13 +9,11 @@ function Skill() {
       <h1>Occupation Profile</h1>
       <h5>Choose the skills you have</h5>
       <div className='container'>
-        {cards.map((card, index) => {
-          return <Card key={index} no={card.index} />;
+        {cards.map((index) => {
+          return <Card key={index} no={index} />;
         })}
       </div>
-      <NavLink to='/result_A'>
-        <button className='button'>Submit</button>
-      </NavLink>
+      <button className='button'>Submit</button>
     </div>
   );
 }
